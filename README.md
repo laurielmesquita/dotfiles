@@ -73,13 +73,22 @@ O Git guarda os arquivos selecionados de aparência, os temas e o código-fonte.
 
 Credenciais, variáveis de ambiente do terminal, históricos, sessões, logs, executáveis e backups não são exportados para o repositório. A captura usa listas explícitas de campos em `manifest.json`; ela não copia indiscriminadamente `.config` ou diretórios de agentes.
 
-Os backups integrais ficam em `~/.local/state/dotfiles/backups/`, com diretórios privados e arquivos de permissão `600`. Podem conter dados locais sensíveis; não são criptografados. Um Git apenas local e backups no mesmo SSD não protegem contra perda do equipamento. A cópia remota privada ainda precisa ser criada e verificada.
+Os backups integrais ficam em `~/.local/state/dotfiles/backups/`, com diretórios privados e arquivos de permissão `600`. Podem conter dados locais sensíveis; não são criptografados. Um Git apenas local e backups no mesmo SSD não protegem contra perda do equipamento. Remoto privado: [laurielmesquita/dotfiles](https://github.com/laurielmesquita/dotfiles). Envie as novas versões com `git push`; os backups integrais locais continuam fora do Git.
 
 ## ⚙️ Instalação
 
 ### Pré-requisitos
 
 macOS com Git, Python 3.9 ou superior, Zsh, Oh My Zsh, os plugins listados em `zsh/prompt.zsh`, Wave, Zed e Fira Code. Para recompilar o auxiliar, é necessário `swiftc` do Xcode ou Command Line Tools. O instalador não baixa aplicativos, fontes, plugins ou pacotes.
+
+### Obter a cópia remota
+
+O repositório é privado; autentique sua conta autorizada no GitHub antes de clonar.
+
+```bash
+git clone https://github.com/laurielmesquita/dotfiles.git "$HOME/Tech Hub/03-Dev Workflows/dotfiles"
+cd "$HOME/Tech Hub/03-Dev Workflows/dotfiles"
+```
 
 ### Conferir e fazer backup
 
@@ -152,7 +161,7 @@ Este é um repositório pessoal. Mudanças devem preservar as configurações pa
 2. Edite os arquivos versionados e atualize `docs/VERIFICATION.md` quando mudar o comportamento.
 3. Execute a validação e os testes; para código Swift, execute também seu autoteste.
 4. Revise o diff, incluindo exclusão de credenciais e dados de sessão, e crie um commit.
-5. Instale somente depois de conferir a prévia. Push e publicação dependem de um remoto privado configurado.
+5. Instale somente depois de conferir a prévia. O remoto `origin` aponta para o repositório privado `laurielmesquita/dotfiles`; use `git push` para enviar os commits revisados.
 
 **Idealização e manutenção:** Lauriel Mesquita. **Template de documentação:** Space Square, adaptado do modelo interno `ss-engineering/readme-template`. Configuração e implementação preparadas com auxílio do Codex.
 

@@ -31,7 +31,7 @@ Os testes operam em HOME temporário. A criação deste repositório não reinst
 - Temas manuais de blocos Wave prevalecem sobre o padrão global. O auxiliar controla o terminal, não toda a interface do Wave.
 - O código usa cores de origem do Codex; superfícies exclusivas do Zed são adaptações. Linguagens/extensões podem acrescentar categorias ou recorrer a cores herdadas. Não há garantia de igualdade visual pixel a pixel em todos os contextos.
 - Restauração validada em diretório temporário, não em um segundo Mac. Dependências não são instaladas pelo script.
-- Backups completos são locais e não criptografados. Repositório remoto privado e cópia fora do equipamento ainda não foram configurados.
+- Backups completos são locais e não criptografados. O remoto privado `https://github.com/laurielmesquita/dotfiles` foi criado em 26/10/2026. Apenas o conteúdo versionado é enviado; os backups integrais permanecem locais e precisam de estratégia própria contra perda do equipamento.
 
 ## Fontes técnicas
 
