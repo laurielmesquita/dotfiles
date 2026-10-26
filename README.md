@@ -16,7 +16,7 @@
   <img alt="Plataforma macOS" src="https://img.shields.io/static/v1?label=platform&message=macOS&color=8be9fd&labelColor=181818">
   <img alt="Tecnologias Python, Swift e Zsh" src="https://img.shields.io/static/v1?label=stack&message=Python%20%7C%20Swift%20%7C%20Zsh&color=ff79c6&labelColor=181818">
   <img alt="Temas Codex Light e Dark" src="https://img.shields.io/static/v1?label=themes&message=Codex%20Light%20%26%20Dark&color=339cff&labelColor=181818">
-  <img alt="Uso privado" src="https://img.shields.io/static/v1?label=usage&message=private&color=50fa7b&labelColor=181818">
+  <img alt="Repositório público" src="https://img.shields.io/static/v1?label=usage&message=public&color=50fa7b&labelColor=181818">
 </p>
 
 <p align="center">Configurações pessoais de desenvolvimento, com histórico, backup e restauração.</p>
@@ -73,7 +73,7 @@ O Git guarda os arquivos selecionados de aparência, os temas e o código-fonte.
 
 Credenciais, variáveis de ambiente do terminal, históricos, sessões, logs, executáveis e backups não são exportados para o repositório. A captura usa listas explícitas de campos em `manifest.json`; ela não copia indiscriminadamente `.config` ou diretórios de agentes.
 
-Os backups integrais ficam em `~/.local/state/dotfiles/backups/`, com diretórios privados e arquivos de permissão `600`. Podem conter dados locais sensíveis; não são criptografados. Um Git apenas local e backups no mesmo SSD não protegem contra perda do equipamento. Remoto privado: [laurielmesquita/dotfiles](https://github.com/laurielmesquita/dotfiles). Envie as novas versões com `git push`; os backups integrais locais continuam fora do Git.
+Os backups integrais ficam em `~/.local/state/dotfiles/backups/`, com diretórios privados e arquivos de permissão `600`. Podem conter dados locais sensíveis; não são criptografados. Um Git apenas local e backups no mesmo SSD não protegem contra perda do equipamento. Remoto público: [laurielmesquita/dotfiles](https://github.com/laurielmesquita/dotfiles). Envie as novas versões com `git push`; os backups integrais locais continuam fora do Git.
 
 ## ⚙️ Instalação
 
@@ -83,7 +83,7 @@ macOS com Git, Python 3.9 ou superior, Zsh, Oh My Zsh, os plugins listados em `z
 
 ### Obter a cópia remota
 
-O repositório é privado; autentique sua conta autorizada no GitHub antes de clonar.
+A cópia pública pode ser clonada sem autenticação. Para enviar alterações, é necessário acesso autorizado ao repositório.
 
 ```bash
 git clone https://github.com/laurielmesquita/dotfiles.git "$HOME/Tech Hub/03-Dev Workflows/dotfiles"
@@ -153,6 +153,10 @@ python3 scripts/dotfiles.py restore --snapshot "$HOME/.local/state/dotfiles/back
 
 A restauração recupera bytes e permissões anteriores e remove somente os arquivos gerenciados que não existiam naquele backup. Antes disso, salva o estado atual em outro backup, permitindo desfazer a própria restauração. Sem `--enable-sync`, os arquivos são restaurados, mas o serviço existente não é reiniciado.
 
+## 🔒 Privacidade
+
+Os commits públicos usam o endereço `noreply` fornecido pelo GitHub. O histórico anterior foi preservado em cópia privada separada e não integra o repositório público. A captura continua restrita aos campos permitidos no manifesto. Leia [os limites e cuidados de publicação](docs/SECURITY.md) antes de incluir novas configurações.
+
 ## 🤝 Como Contribuir
 
 Este é um repositório pessoal. Mudanças devem preservar as configurações particulares e ser conferidas antes de aplicadas ao ambiente ativo.
@@ -161,13 +165,13 @@ Este é um repositório pessoal. Mudanças devem preservar as configurações pa
 2. Edite os arquivos versionados e atualize `docs/VERIFICATION.md` quando mudar o comportamento.
 3. Execute a validação e os testes; para código Swift, execute também seu autoteste.
 4. Revise o diff, incluindo exclusão de credenciais e dados de sessão, e crie um commit.
-5. Instale somente depois de conferir a prévia. O remoto `origin` aponta para o repositório privado `laurielmesquita/dotfiles`; use `git push` para enviar os commits revisados.
+5. Instale somente depois de conferir a prévia. O remoto `origin` aponta para o repositório público `laurielmesquita/dotfiles`; use `git push` para enviar os commits revisados.
 
 **Idealização e manutenção:** Lauriel Mesquita. **Template de documentação:** Space Square, adaptado do modelo interno `ss-engineering/readme-template`. Configuração e implementação preparadas com auxílio do Codex.
 
 ## 📝 Licença
 
-Repositório destinado a uso pessoal e privado. Nenhuma licença de redistribuição foi definida nesta etapa; o selo MIT do template não foi reproduzido como autorização implícita. Oh My Zsh, Wave, Zed, Fira Code e os demais componentes mantêm suas próprias licenças. O repositório não redistribui aplicativos, fontes ou plugins.
+Repositório público de configurações pessoais. Nenhuma licença de redistribuição foi definida nesta etapa; o selo MIT do template não foi reproduzido como autorização implícita. Oh My Zsh, Wave, Zed, Fira Code e os demais componentes mantêm suas próprias licenças. O repositório não redistribui aplicativos, fontes ou plugins.
 
 ---
 <br>
