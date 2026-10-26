@@ -1,0 +1,22 @@
+{
+  "logo.png": {
+    "width": 2171,
+    "height": 724,
+    "bytes": 1430968,
+    "sha256": "bdf2f8bb62da0428b386e4bba29da143494cfb520b0814008f9913047a09c349",
+    "mode": "native imagegen edit",
+    "revision": 2,
+    "central_dot": "near-black",
+    "background": "off-white solid"
+  },
+  "hero.png": {
+    "width": 1774,
+    "height": 887,
+    "bytes": 1592157,
+    "sha256": "b99964bb1f3acd325261be167d8027d09f67ff22679f6ee9d80d8a6f21124077",
+    "mode": "native imagegen edit",
+    "revision": 2,
+    "central_dot": "off-white",
+    "background": "charcoal solid"
+  }
+}

@@ -1,4 +1,6 @@
-<h1 align="center">dotfiles</h1>
+<h1 align="center">
+  <img alt="dotfiles — marca com o d do wordmark e ponto central preto" src=".gitimg/logo.png" width="440" />
+</h1>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -18,6 +20,10 @@
 </p>
 
 <p align="center">Configurações pessoais de desenvolvimento, com histórico, backup e restauração.</p>
+
+<p align="center">
+  <img alt="dotfiles: Seu ambiente. Do seu jeito. — hero com símbolo azul e componentes Zsh, Wave e Zed" src=".gitimg/hero.png" width="100%" />
+</p>
 
 <br><br><br>
 
