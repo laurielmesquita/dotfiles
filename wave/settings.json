@@ -3,5 +3,6 @@
   "term:fontfamily": "Fira Code",
   "term:fontsize": 14,
   "term:theme": "codex-dark",
-  "term:transparency": 0
+  "term:transparency": 0,
+  "term:cursor": "bar"
 }

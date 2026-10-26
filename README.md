@@ -56,7 +56,7 @@ dotfiles/
 ### Temas e comportamento
 
 - **Zsh:** `➜ nome-da-pasta git:(main) ✗`; as informações de Git aparecem em repositórios. O trecho versionado conserva plugins adicionais já configurados pelo usuário.
-- **Wave:** cores originais, incluindo o azul `#339cff`; sem transparência; WebGL desativado como contorno para os retângulos pretos observados no tema claro. A eficácia visual desse contorno ainda precisa de confirmação.
+- **Wave:** cursor em barra vertical (`term:cursor: bar`); cores originais, incluindo o azul `#339cff`; sem transparência; WebGL desativado como contorno para os retângulos pretos observados no tema claro. A eficácia visual desse contorno ainda precisa de confirmação.
 - **Aparência automática no Wave:** um LaunchAgent local recebe `AppleInterfaceThemeChangedNotification` e altera somente `term:theme`. Não usa polling nem rede. A interface externa do Wave tem comportamento próprio; blocos com tema fixo precisam selecionar a opção padrão/herdada.
 - **Zed:** temas claro e escuro completos, seguindo o sistema, com 130 propriedades e 72 categorias de sintaxe por variante. As principais cores de código correspondem aos arquivos de origem do Codex; menus, diagnósticos, Git e busca recebem adaptações da mesma paleta.
 - **Ligaduras:** habilitadas no editor e no terminal do Zed. O Wave 0.14.5 não oferece a configuração equivalente verificada neste ambiente.

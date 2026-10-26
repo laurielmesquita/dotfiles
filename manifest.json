@@ -11,7 +11,8 @@
         "term:fontfamily",
         "term:fontsize",
         "term:theme",
-        "term:transparency"
+        "term:transparency",
+        "term:cursor"
       ]
     },
     {

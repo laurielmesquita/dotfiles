@@ -39,3 +39,7 @@ Os testes operam em HOME temporário. A criação deste repositório não reinst
 - [Terminal e contraste no Zed](https://zed.dev/docs/terminal)
 - [Personalização do Wave](https://docs.waveterm.dev/customization)
 - [Relato de fundos pretos no Wave 0.14.5](https://github.com/wavetermdev/waveterm/issues/3563) — indício usado para o contorno, não prova de resolução neste Mac.
+
+## Ajuste de cursor — 26/10/2026
+
+Cursor do Wave alterado de bloco para barra vertical (`term:cursor = bar`), conforme preferência do usuário. Configuração ativa e snapshot versionado foram atualizados; o campo foi incluído na lista de captura. Backup local criado antes da alteração. Conferência visual ainda depende do aplicativo.
