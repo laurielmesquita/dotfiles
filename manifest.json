@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-10-26",
+  "platform": "macOS",
+  "settings": [
+    {
+      "source": "wave/settings.json",
+      "target": ".config/waveterm/settings.json",
+      "keys": [
+        "term:disablewebgl",
+        "term:fontfamily",
+        "term:fontsize",
+        "term:theme",
+        "term:transparency"
+      ]
+    },
+    {
+      "source": "zed/settings.json",
+      "target": ".config/zed/settings.json",
+      "keys": [
+        "cli_default_open_behavior",
+        "terminal",
+        "project_panel",
+        "show_signature_help_after_edits",
+        "auto_signature_help",
+        "minimap",
+        "current_line_highlight",
+        "buffer_font_family",
+        "auto_indent_on_paste",
+        "linked_edits",
+        "format_on_save",
+        "wrap_guides",
+        "soft_wrap",
+        "tab_size",
+        "base_keymap",
+        "ui_font_size",
+        "buffer_font_size",
+        "theme",
+        "buffer_font_features"
+      ],
+      "nested_keys": {
+        "terminal": [
+          "font_size",
+          "minimum_contrast",
+          "font_features",
+          "font_family",
+          "font_fallbacks"
+        ]
+      }
+    }
+  ],
+  "files": [
+    {
+      "source": "zsh/prompt.zsh",
+      "target": ".config/dotfiles/zsh.zsh"
+    },
+    {
+      "source": "wave/termthemes.json",
+      "target": ".config/waveterm/termthemes.json",
+      "merge": true
+    },
+    {
+      "source": "zed/themes/codex.json",
+      "target": ".config/zed/themes/codex.json"
+    },
+    {
+      "source": "macos/wave-theme-sync/main.swift",
+      "target": ".config/waveterm/system-theme-sync/main.swift"
+    }
+  ],
+  "versions_observed": {
+    "Wave": "0.14.5",
+    "Zed": "1.25.3",
+    "Codex": "26.1021.31345"
+  },
+  "readme_template": "Space Square/03-Internal Projects/ss-engineering/readme-template/README.md",
+  "scope": "Personal appearance configuration; no credentials, histories or app sessions"
+}

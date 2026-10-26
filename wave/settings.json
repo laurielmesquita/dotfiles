@@ -1,0 +1,7 @@
+{
+  "term:disablewebgl": true,
+  "term:fontfamily": "Fira Code",
+  "term:fontsize": 14,
+  "term:theme": "codex-dark",
+  "term:transparency": 0
+}
